@@ -52,6 +52,8 @@
     
   * 下载第三方模块uniq：打开左下角的Terminal，cd到02_CommonJS-Node路径，输入命令：```npm install uniq```
 
+  * <span style="color:red;font-weight:bold">引入模块时``let module1 = require(地址)；``如果引入第三方模块，直接写入模块名，如果引入自定义模块，必须填写路径，而且不能省略前边的"./"</span>
+
   * app.js 
     ```js
     let module1 = require('./modules/module1')
@@ -67,10 +69,10 @@
     
     let arr = [1,11,2,2,2,5,5,5,3,4,6,6,9,7,8]
     console.log(a(arr));
-      
+       
     ```
-### 4. 在node环境下运行app.js的两种方法(任选其一)：
-    
+    ### 4. 在node环境下运行app.js的两种方法(任选其一)：
+
   * 第一种方法：用命令启动: ```node app.js```
 
   * 第二种方法：用工具启动: 右键 --> Run 'xxxxx.js'
