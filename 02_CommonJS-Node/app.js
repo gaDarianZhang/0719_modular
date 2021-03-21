@@ -4,10 +4,10 @@
 *         1.如果引入的是第三方模块，则直接写模块名。
 *         2.如果引入的是自定义模块，必须写路径。
 * */
-let module1 = require('./modules/module1.js')
+let module1 = require('./modules/module1.js');//module.exports = {}
 let {data,test} = require('./modules/module1.js')//引入的同时，进行解构赋值
-let module2 = require('./modules/module2.js')
-let module3 = require('./modules/module3.js')
+let module2 = require('./modules/module2.js')//exports.haha = function
+let module3 = require('./modules/module3.js')//exports.peiqi = []
 let uniq = require('uniq')
 
 
@@ -15,6 +15,7 @@ let uniq = require('uniq')
 console.log(module1.data);
 module1.test()
 module2.haha()
+console.log(module3);
 console.log(module3.peiqi);
 console.log(uniq([1, 3, 2, 5, 4, 3, 6, 7, 11, 10, 9, 8]));
 console.log(data)
