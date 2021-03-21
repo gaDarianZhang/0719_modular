@@ -1,4 +1,4 @@
-module.exports = function (params) {
+exports=module.exports = function (params) {
   console.log("module.exports = function,exports.peiqi");
 }
 exports.peiqi = [1,3,5,7,9];//!!!!!!!!!!原以为这样把module.exports=function写在前边，

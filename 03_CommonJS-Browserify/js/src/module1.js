@@ -1,10 +1,7 @@
-/*
-* 第一种暴露方式：module.exports = value
-* */
-module.exports = {
-  data:'atguigu,前端课程',
-
-  test () {
-    console.log(this.data)
-  }
+exports = module.exports = {
+    data:"module1的data属性",
+    getData(){
+        console.log(this.data);
+    }
 }
+exports.demo = "demo";
