@@ -66,7 +66,7 @@
     module2()
     module3.foo()
     module3.bar()
-    
+    //我来加一行注释
     let arr = [1,11,2,2,2,5,5,5,3,4,6,6,9,7,8]
     console.log(a(arr));
        
