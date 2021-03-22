@@ -47,7 +47,7 @@
       console.log('module3 bar()')
     }
     ```
-  * 下载第三方模块uniq：打开左下角的Terminal，cd到02_CommonJS-Node路径，输入命令：```npm install uniq --save```
+  * 下载第三方模块uniq：打开左下角的Terminal，cd到02_CommonJS-Node路径，输入命令：```npm install uniq```
   
   * app.js
     ```js
