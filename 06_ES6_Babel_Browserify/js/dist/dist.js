@@ -29,6 +29,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //import * as haha from './module1'
 
 //引入module2,module2是【统一暴露】的
+/*
+* 主文件，用于汇总各个模块
+* */
+
+//在es6的模块化规范中，用哪一种方式引入，取决于用何种方式暴露的。
+
+//引入module1，module1是【分别暴露】的
 console.log(_module.data);
 
 //引入第三方模块uniq，几乎所有的第三方模块，都用默认暴露的方式。
@@ -41,13 +48,6 @@ console.log(_module.data);
 //import {haha1,haha2} from './module2'
 
 //【引入module3,module3是默认暴露的】
-/*
-* 主文件，用于汇总各个模块
-* */
-
-//在es6的模块化规范中，用哪一种方式引入，取决于用何种方式暴露的。
-
-//引入module1，module1是【分别暴露】的
 
 (0, _module.demo1)();
 (0, _module.test1)();
