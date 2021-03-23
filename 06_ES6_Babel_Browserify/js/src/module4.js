@@ -4,11 +4,9 @@
 
 //分别暴露
 export let arr0 = [1,3,5,7,9,10]
-
 export function bar() {
   console.log('module4-------bar()')
 }
-
 export function foo() {
   console.log('module4-------foo()')
 }

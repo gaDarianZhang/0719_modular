@@ -4,13 +4,15 @@
 
 export let data = "Module Es6";
 
-export function demo() {
+export function demo1() {
   console.log("我是module1里边的demo函数",data.toUpperCase());
 }
 
-export function test() {
+export function test1() {
   console.log("我是module1里边的test函数",data.toLowerCase());
 }
+
+export let peipei = "我是module1里边的peiqi";
 
 
 //以下代码与暴露无关，是module1内部自己在用的东西

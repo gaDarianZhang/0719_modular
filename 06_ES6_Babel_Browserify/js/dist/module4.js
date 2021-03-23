@@ -17,11 +17,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 //分别暴露
 var arr0 = exports.arr0 = [1, 3, 5, 7, 9, 10];
-
 function bar() {
   console.log('module4-------bar()');
 }
-
 function foo() {
   console.log('module4-------foo()');
 }
