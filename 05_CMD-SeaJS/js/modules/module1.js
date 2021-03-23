@@ -9,6 +9,7 @@ define(function (require,exports,module) {
     console.log(data)
   }
 
-  module.exports = {getData}
+  module.exports= {getData}
 
 })
+

@@ -11,7 +11,8 @@ define(function (require,exports,module) {
 
   //引入module3-----异步引入
   require.async('./module3',function (m3) {
-    m3.getData()
+    m3.getData();
+    // console.log(m3.uniq);
   })
 
   function getData() {

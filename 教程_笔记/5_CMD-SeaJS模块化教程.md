@@ -4,7 +4,7 @@
   * github : https://github.com/seajs/seajs
   * 将sea.js导入项目: js/libs/sea.js 
 2. 创建项目结构
-  ```
+  ```js
   |-js
     |-libs
       |-sea.js
@@ -17,8 +17,9 @@
   |-index.html
   ```
 3. 定义sea.js的模块代码
+    - 暴露必须使用module.exports，不能使用exports
   * module1.js
-    ```
+    ```js
     define(function (require,exports,module) {
       var name = 'module1';
     
@@ -31,7 +32,7 @@
     });
     ```
   * module2.js
-    ```
+    ```js
     define(function (require,exports,module) {
       var name = 'module2';
     
@@ -44,7 +45,7 @@
     });
     ```
   * module3.js
-    ```
+    ```js
     define(function (require,exports,module) {
       var name = 'module3';
     
@@ -57,7 +58,7 @@
     });
     ```
   * module4.js
-    ```
+    ```js
     //module4依赖于module2，module3
     define(function (require,exports,module) {
       var name = 'module4';
@@ -77,7 +78,7 @@
     });
     ```
   * main.js : 主(入口)模块
-    ```
+    ```js
     define(function (require) {
       var m1 = require('./module1')
       var m4 = require('./module4')
@@ -86,7 +87,7 @@
     })
     ```
 4. index.html:
-  ```
+  ```js
   <!--
   使用seajs:
     1. 引入sea.js库
@@ -105,10 +106,10 @@
   </script>
   ```
 5.思考：为什么运行后输出结果如下？   
-```
+
+```js
 module2
 module1
 module4
 module3
 ```
-       
