@@ -1,16 +1,18 @@
 'use strict';
 
-var _module = require('./module1');
+var _module = require('./module1.js');
 
-var _module2 = require('./module2');
+var _module2 = require('./module1');
 
-var _module3 = require('./module3');
+var _module3 = require('./module2');
 
-var _module4 = _interopRequireDefault(_module3);
+var _module4 = require('./module3');
 
-var _module5 = require('./module4');
+var _module5 = _interopRequireDefault(_module4);
 
-var _module6 = _interopRequireDefault(_module5);
+var _module6 = require('./module4');
+
+var _module7 = _interopRequireDefault(_module6);
 
 var _uniq = require('uniq');
 
@@ -35,7 +37,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //在es6的模块化规范中，用哪一种方式引入，取决于用何种方式暴露的。
 
 //引入module1，module1是【分别暴露】的
-console.log(_module.data);
+console.log(_module2.data);
 
 //引入第三方模块uniq，几乎所有的第三方模块，都用默认暴露的方式。
 
@@ -50,15 +52,15 @@ console.log(_module.data);
 
 (0, _module.demo1)();
 (0, _module.test1)();
-(0, _module2.demo2)();
-(0, _module2.test2)();
+(0, _module3.demo2)();
+(0, _module3.test2)();
 /*console.log(module3.name)
 console.log(module3.age)
 module3.speak()*/
-console.log(_module4.default);
+console.log(_module5.default);
 console.log((0, _uniq2.default)([1, 3, 3, 3, 2, 5, 4, 6, 7, 9, 8, 11, 10]));
-console.log(_module5.arr0, _module5.str, _module5.student, _module5.d1);
-(0, _module5.bar)();
-(0, _module5.foo)();
-_module5.d1.run();
-console.log(_module6.default);
+console.log(_module6.arr0, _module6.str, _module6.student, _module6.d1);
+(0, _module6.bar)();
+(0, _module6.foo)();
+_module6.d1.run();
+console.log(_module7.default);

@@ -5,7 +5,7 @@
 //在es6的模块化规范中，用哪一种方式引入，取决于用何种方式暴露的。
 
 //引入module1，module1是【分别暴露】的
-import {demo1,test1} from './module1'
+import {demo1,test1} from './module1.js'
 import {data} from './module1'
 
 //【另外一种写法】：引入module1，module1是【分别暴露】的，此种引入方式会将module1暴露的内容，收集成一个对象

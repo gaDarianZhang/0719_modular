@@ -54,6 +54,8 @@
 
   * <span style="color:red;font-weight:bold">引入模块时``let module1 = require(地址)；``如果引入第三方模块，直接写入模块名，如果引入自定义模块，必须填写路径，而且不能省略前边的"./"。模块的加载是同步（~~异步~~）加载的</span>
 
+  * 引入模块时可以加.js后缀，也可以不加
+
   * app.js 
     ```js
     let module1 = require('./modules/module1')

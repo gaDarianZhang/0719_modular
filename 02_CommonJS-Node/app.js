@@ -4,7 +4,7 @@
 *         1.如果引入的是第三方模块，则直接写模块名。
 *         2.如果引入的是自定义模块，必须写路径。
 * */
-let module1 = require('./modules/module1.js');//module.exports = {}
+let module1 = require('./modules/module1');//module.exports = {}
 let {data,test} = require('./modules/module1.js')//引入的同时，进行解构赋值
 let module2 = require('./modules/module2.js')//exports.haha = function
 let module3 = require('./modules/module3.js')//exports.peiqi = []
