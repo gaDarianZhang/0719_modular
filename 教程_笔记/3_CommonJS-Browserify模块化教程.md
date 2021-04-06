@@ -21,7 +21,7 @@
 
 ### 2. 模块化编码
 
-- 模块化这一部分还是想在CommonJS  Node服务器端使用一样
+- 模块化这一部分还是像在CommonJS  Node服务器端使用一样
 
   * module1.js
     ```js

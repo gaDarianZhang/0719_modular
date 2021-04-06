@@ -28,5 +28,7 @@
 - 使用npm命令安装完包之后，会在package.json文件中自动添加上已安装的包的名称，同时也会在package-lock.json中添加上包的详细信息。同时还有一个node_modules文件夹，里面存的就是下载的这些包。
 - 所以，<span style="color:orange">当拷贝这份代码的时候，不需要拷贝node_modules这个文件夹里的包，只用带上package.json文件，然后使用``npm install``即可自动安装这些依赖包</span>
 
+### 5. webstorm中每个项目要启用Node
 
-
+- 启用方法：
+    - settings->Languages&Frameworks->Node.js and NPM->coding assistance for Node.js
